@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Javascript ES6 - Budi Aqsha Nawawi</title>
+</head>
+<body background="poto6.jpg">
+    <div>
+        <select onchange="change()" id="One">
+            <option>Select</option>
+            <option value="Mouse">Tikus</option>
+            <option value="Buffalo">Kerbau</option>
+            <option value="Dog">Anjing</option>
+            <option value="Srigala">Gajah</option>
+            <option value="Lion">Singa</option>
+        </select>
+    </div><br>
+        <img src="" alt="" id="Two" width="100%"><br>
+
+<script>
+    function change(){
+        let img = document.getElementById("One").value
+        let image = document.getElementById("Two")
+        if(img == "Mouse"){
+           image.src = "poto1.jpg"
+            alert ("Ini adalah gambar seekor Tikus!")
+        }else if(img == "Buffalo"){
+            image.src = "poto5.jpg"
+            alert ("Ini adalah gambar seekor Kerbau!")
+        }else if(img == "Dog"){
+            image.src = "poto4.jpg"
+            alert ("Ini adalah gambar seekor Anjing")
+        }else if(img == "Srigala"){
+            image.src = "poto2.jpg"
+            alert ("Ini adalah gambar seekor Gajah")
+        }else if(img == "Lion") {
+            image.src = "poto3.jpg"
+            alert("Ini adalah gambar seekor Singa")
+        }    
+    }
+</script>
+
+</body>
+</html>
